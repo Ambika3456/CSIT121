@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Layout Lab Example</title>
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    <h1> My Page</h1>
+    <h2>Labs 1, 2 & 3</h2>
+    <em>Published on August 6, 2024 by The Professor</em>
+    </header>
+
+
+    <nav id="slidenav">
+        <ul>
+            <li><a href="#lab01">Lab 1</a></li>
+            <li><a href="#lab02">Lab 2</a></li>
+            <li><a href="#lab03">Lab 3</a></li>
+            <li><a href="#lab05">Lab 5</a></li>
+        </ul>
+    </nav>
+
+       <main>
+    <section id="lab01">
+        <h2>What I learned in Lab 1</h2>
+    <p>My first webpage! At first, the process seemed daunting, with so many tags and structures to<br>
+        remember, but breaking it down step by step made in manageable.
+        <br>Learning how to properly structure and HTML helped me understand <br>how webpages are built and displayed.</p>
+    </section>
+
+    <section id="lab02">
+        <h2>What I learned in Lab02</h2>
+    <p class="blue">In Lab02, I learned to use basic tags and attributes, such as break a paragraph, making text bold or italic, creating ordered and unordered list, and adding headings styles. 
+        <br> I also learned how to connect links to websites. <br> There are 3 types of HTML relationship. Parent, Child and Sibling.
+        <br> ID, Class, Title, Style are the attributes in HTML, that helps to organize element and improve the apperance of the webpages.
+       <br>ID:ID is a universal attribute in web standards. <br> Class: Class provide context to the element.<br>Title: Title provides extra information.<br>Style:Apply inline stylesheet.
+    </p>
+    <br>I learned in Module two about HTML basic concept and CSS.
+    <ol>
+        <li>A thing I learned is h1 to h6 to define heading size</li>
+        <li>Another thing I learned is to make text bold or italic.</li>
+        <li> So many thingsI learned about tags and attributes.! For example, em, u, br, p, d1, dd, dt, tags. </li>
+    </ol>
+    </section>
+    <section id="lab03">
+        <h2>What I learned in Lab03</h2>
+    <p>Learning about HTML is an exciting part this semestar.<br> 
+        I enjoy a lot and feel a little bit confusion. But reading and<br>
+        following the instructions carefully helped me to complete my assignment.</p>
+    <ul> 
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content">
+            I learned a lot from here</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">From this page, I learned more.</a></li>
+    </ul>
+    </section>
+    <section id="lab05">
+        <h2>Lab 5, Best Design Practice</h2>
+        <p>In this section, I reflect best design practice I've learned and applied through hands-on experience. I've realized that there are two main screen types:mobile-friendly and desktop (large screen) sharing. 
+            <br>Clear navigation helps user find information more quickly, and CSS and HTML should link properly to display the webpage correctly accross devices. This is my Best Design Practie HTML page among my assignment. I've work hard and focus in every single tag and element. Instructions are very important to complete the assignment. Thank you.</p>
+        <p>Reflection: In Lab 1, I put a lot of effort to understand the HTML tags and language.
+            <br>I took detail notes, hand-on practice everytime, and follow the instructions carefully. My hardwork paid off, and I achieve full points.</p>
+        <p>Reflection:In Lab 2, I focused on adding more details and resource of to my practice. My initial resource is always of practice was professor instructions. 
+            <br>I never miss a video and details to complete the assingment. I enjoy to create design and want to play with tags, specially in CSS.</p>
+        <p>Reflection: Lab 3 was little bit different and more challenging to complete. At first, it was confused about how to finish the task and upload in to GitHub.
+            <br> I did a lot of work but missed some steps and change the content. After the feed back from the professor, I realize we should not have to add new resporitary each time and missed some content.</p>
+                
+        
+            
+        
+       
+    </section>
+    <aside>
+    <h2>Slidebar</h2>
+    <p>Choose a layout below:</p>
+    <ul>
+        <li><button onclick="changeStylesheet('standard.css')">Normal flow</button></li>
+        <li><button onclick="changeStylesheet('flex1.css')">Flex Full</button></li>
+        <li><button onclick="changeStylesheet('flex2.css')">Flex Stacked</button></li>
+        <li><button onclick="changeStylesheet('grid1.css')">Grid Full</button></li>
+    </ul>
+    </aside>
+    </main>
+    <footer>©2024 The Professor. All rights reserved.</footer>
+    
+
+    <script>
+        function changeStylesheet(sheet) {
+            document.getElementById('stylesheet').setAttribute('href', sheet);
+        }
+    </script>
+
+</body>
+</html>

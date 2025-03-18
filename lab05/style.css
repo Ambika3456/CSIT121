@@ -1,0 +1,147 @@
+/*for page*/
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin:10px;
+    padding:0px;
+    box-sizing:border-box;
+    min-height: fit-content;
+    display:flex;
+    flex-direction:column;
+    background-color: chartreuse;
+
+}
+header{
+    font-family:fantasy;
+    color:red;
+    text-align:center;
+}
+
+em{
+    color:blue;
+    }
+p{
+    color: green;
+}
+footer{
+    background-color:red;
+}
+ol{
+    font-weight:bold;
+    color:red;
+}
+a{
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:800;
+}
+/*mobile layout*/
+main{
+    display:flex;
+    flex-direction:column;
+    gap:0px;
+    padding:0px;
+}
+
+/*style for each section*/
+#lab01{
+background-color:black;
+padding:0px;
+border-radius:0px;
+}
+#lab01 h2{
+    color:brown;
+}
+#lab01 p{
+    color:red;
+}
+
+#lab02{
+    padding:0%;
+    border-radius:0%;
+}
+#lab02 h2{
+    color:rosybrown;
+}
+#lab02 p{
+    color:blueviolet;
+}
+
+#lab03{
+    color:red;
+}
+#lab03 p{
+    color:chocolate;
+}
+#lab03 h2{
+    color:red;
+}
+#lab03 ul{
+    display:block;
+}
+#lab03 li{
+    display:list-item;
+}
+#lab03 a{
+    color:blue;
+}
+
+#lab05 h2{
+        color:red;
+    }
+
+
+section{
+    background-color:black;
+    padding:20px;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+/*media query for desktop screen*/
+@media (min-width:768px){
+main{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30px;
+    padding:30px;
+
+}
+}
+#slidenav{
+    height:100%;
+    width:250px;
+    position:fixed;
+    top:0;
+    bottom:0;
+    padding-top:75px;
+    padding:75px;
+    text-align:left;
+    left: 2px;;
+
+/*for left side navagation*/
+}
+
+#slidenav ul{
+    padding:20px;
+    margin:10px;
+    display:grid;
+    position:fixed;
+    /* affect all lists*/
+}
+#slidenav ul li{
+    margin-bottom:0%;
+    color:brown;
+    font-stretch: expanded;
+}
+#slidenav ul li a{
+    color:black;
+    font-weight: 800;    
+}
+.changeStylesheet{
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+
+
+
+

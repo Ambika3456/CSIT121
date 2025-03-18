@@ -1,0 +1,13 @@
+/*basic concept*/
+header{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:red;
+    flex-direction:column-reverse;
+
+
+}
