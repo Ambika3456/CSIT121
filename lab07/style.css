@@ -1,0 +1,44 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+
+}
+#fav{
+    border-collapse:collapse;
+    margin:25px 0;
+    font-size:0.9em;
+    min-width:875px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0 4px 6px black;
+    
+    }
+    .firstrow th{
+        background-color: aqua;
+        text-align: left;
+        font-weight:bold;
+        padding:12px 15px;
+    }
+    #fav tbody tr{
+        border-bottom:2px solid black;
+
+    }
+    #fav tbody tr:nth-of-type(even){
+        background-color:red;
+    }
+    #fav tbody tr:nth-of-type(odd){
+        background-color:yellow;
+    }
+    .tier{
+        color:black;
+        background-color:grey;
+    }
+    p{
+        color:cadetblue;
+
+    }
+    h1{
+        text-align:left;
+    }
+    h2{
+        text-decoration: dotted;
+    }

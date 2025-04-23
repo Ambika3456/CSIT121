@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Fav Tier List</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <a href="tierlist.html">Tier List</a>
+            <a href="contact.html">contact list</a>
+        </nav>
+        <div class="tier">
+            <h1>Contact Information</h1>
+            <form id="contactForm">
+                <div>
+                    
+                    <label for="place">Place Name:</label> 
+                    <select id="place" name="place">
+                    <option value="selectone">Select Place</option>
+                    <option value="kathmandu">Kathmandu</option>
+                    <option value="pokhara">Pokhara</option>
+                    <option value="nuwakot">Nuwakot</option>
+                    <option value="bhaktapur">Bhaktapur</option>
+                    <option value="dharan">Dharan</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="temple">Famous Temple:</label>
+                    <select id="temple" name="temple">
+                    <option value="selectone">Select Place</option>
+                    <option value="kathmandu">PashupatiNath</option>
+                    <option value="pokhara">Tal Barahi</option>
+                    <option value="nuwakot">Bhairabi Devi</option>
+                    <option value="bhaktapur">Changu Narayan</option>
+                    <option value="dharan">Budda Subba</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="language">Language:</label>
+                    <input type="text" id="language" name="language" placeholder="e.g Nepali">
+                </div>
+                <br>
+                <div>
+                    <p>Religion:</p>
+
+                    <input type="radio" id="hindu" name="religion" value="hindu">
+                    <label for="hindu">Hindu</label>
+
+                    <input type="radio" id="buddhist" name="religion" value="buddhist">
+                    <label for="buddhist">Buddist</label>
+
+                    <input type="radio" id="christain" name="religion" value="Christain">
+                    <label for="christain">Christain</label>
+
+                    <input type="radio" id="others" name="religion" value="Others">
+                    <label for="others">Others</label>
+                    
+
+               </div>
+               <div>
+                <p>Select all City Name:</p>
+                    <input type="checkbox" id="dharan" name="dharan" value="Buddasubba">
+                    <label for="dharan">Dharan</label> 
+                </div>
+
+                <div>
+                    <input type="checkbox" id="kathmandu" name="kathmandu" value="pashupatinath">          
+                    <label for="kathmandu">Kathmandu</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="nuwakot" name="nuwakot" value="bhairabi devi">      
+                    <label for="nuwakot">Nuwakot</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="pokhara" name="pokhara" value="tal barahi">          
+                    <label for="pokhara">Pokhara</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bhaktapur" name="bhaktapur" value="changunarayan">
+                    <label for="bhaktapur">Bhaktapur</label> <br>
+              </div>
+              <div>
+                <label for="contactNumber">Contact Info</label>
+                <input type="tel" id="contactNumber" name="contactNumber" placeholder="e.g.123-456-7890"><br>
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="e.g superman@email.com"><br>
+              </div>
+              <div>
+                <label for="comments">Your comments:</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="40" placeholder="e.g: Your sweet reactions"></textarea>
+              </div>
+
+                <div> 
+                    <input type="reset">
+                </div>
+                <br>
+                <div>
+                    <input type="submit">
+                </div>
+                </form>
+                </div>
+            <script>
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+              event.preventDefault();
+              const selectedPlace = document.getElementById("place").value;
+          
+              if (selectedPlace && selectedPlace !== "selectone") {
+                window.location.href = `tierlist.html#${selectedPlace}`;
+              } else {
+                alert("Please select a valid place!");
+              }
+            });
+          </script>
+    </body>
+    </html>
+
