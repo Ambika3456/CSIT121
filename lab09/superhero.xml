@@ -1,0 +1,42 @@
+<?xml version="l.0" encoding="UTF-8"?>
+<superhero>
+    <personaldetails>
+        <name>Bir Balvadra Kuwar</name>
+        <born> 17th century, Nepal</born>
+        <father>Chandra Bir Kunwar</father>
+        <grandfather>Jay Krishna Kuwar</grandfather>
+        <origin>Nalapani, Nepal</origin>
+        <title>Gurkha Commander</title>
+    </personaldetails>
+
+        <power>
+            <name>Unbreakable Courage</name>
+            <description>He defended Nalapani fort with only 600 people agaist 3500 British force even without water and support.</description>
+        </power>
+
+        <power2>
+            <name>Spirit of Nalapani</name>
+            <description>Bir Balavdra Kuwar's bravery and intergity earned him great respect and honor for the Gurkha Army.His sacrifice is considered on of the greatest history of Nepal</description>
+        </power2>
+
+        <weakness>
+            <name>Never-back-to-down</name>
+            <description>He refuses to retreat, even when the battle seems lost, putting himself at greater risk and fighting alone against the British Army.</description>
+        </weakness>
+
+        <friend>
+            <name>King Prithivi Narayan Shah</name>
+            <description>King of Gurkha, Founder of Nepal.The Kunwar's family has strong and administrative relationship with Shah Dynasty, especially who were in Gurkha Army.</description>
+        </friend>
+
+        <enemy>
+            <name>British Army</name>
+            <description>During Anglo-Nepali-war, the British commander Sir Rollo Gillespie attacked Nepal to controlled it. Bir Balavadra Kunwar, never let Nepal fall into British hand and defend unbreakable courage and stop.</description>
+        </enemy>
+
+        <headquater>
+            <title>Gurkha Commander</title>
+            <location>Nalapani, northeast of Deradhun, India (now India)</location>
+        </headquater>
+</superhero>
+

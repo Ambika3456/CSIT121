@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Task - Employee Data Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 2px solid black /* Default border */
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #employeeTable {
+            display: none; /* Initially hide the table */
+        }
+        /* Add Aqua color background to odd rows */
+        tr:nth-child(odd) {
+            background-color: aqua; /* Aqua background for odd rows */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Employee Information</h1>
+    
+    <!-- Button to toggle the employee data -->
+    <button id="toggleButton" onclick="toggleData()">Get Employee Data</button>
+
+    <!-- Table to display employee data -->
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Title</th>
+                <th>Division</th>
+                <th>Building</th>
+                <th>Room</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>be129</td>
+                <td>Jitendra</td>
+                <td>Kumar</td>
+                <td>Engineer</td>
+                <td>Materials</td>
+                <td>327</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>be130</td>
+                <td>Amit</td>
+                <td>Kumar</td>
+                <td>Accountant</td>
+                <td>Accts Payable</td>
+                <td>326</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>be131</td>
+                <td>Akash</td>
+                <td>Kumar</td>
+                <td>Engineering Manager</td>
+                <td>Materials</td>
+                <td>327</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>be132</td>
+                <td>Aishwarya</td>
+                <td>Kulshrestha</td>
+                <td>Engineer</td>
+                <td>Materials</td>
+                <td>327</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>be133</td>
+                <td>Sachin</td>
+                <td>Kumar</td>
+                <td>Engineer</td>
+                <td>Materials</td>
+                <td>327</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>be134</td>
+                <td>Vikash</td>
+                <td>Kumar</td>
+                <td>COO</td>
+                <td>Management</td>
+                <td>216</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>be135</td>
+                <td>Suvam</td>
+                <td>Basak</td>
+                <td>Accountant</td>
+                <td>Accts Payable</td>
+                <td>326</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>be136</td>
+                <td>Abhinav</td>
+                <td>Kumar</td>
+                <td>COO</td>
+                <td>Management</td>
+                <td>216</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>be137</td>
+                <td>DhanPal</td>
+                <td>Singh</td>
+                <td>Engineering Manager</td>
+                <td>Materials</td>
+                <td>327</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>be138</td>
+                <td>Sarita</td>
+                <td>Adhikari</td>
+                <td>Administrative Officer</td>
+                <td>Administration</td>
+                <td>123</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>be139</td>
+                <td>Padam</td>
+                <td>Thapa</td>
+                <td>Section Officer</td>
+                <td>Store and Commodity</td>
+                <td>125</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>be140</td>
+                <td>Ambika</td>
+                <td>Bhattarai</td>
+                <td>IT Officer</td>
+                <td>Technology</td>
+                <td>123</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>be141</td>
+                <td>Mousami</td>
+                <td>Khadka</td>
+                <td>Field Assistant</td>
+                <td>Accts and Pay</td>
+                <td>120</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>be142</td>
+                <td>Ramchandra</td>
+                <td>Lamichhane</td>
+                <td>Engineering Manager</td>
+                <td>Water and Air Protection</td>
+                <td>121</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>be143</td>
+                <td>Lila</td>
+                <td>Gaire</td>
+                <td>Agriculture Officer</td>
+                <td>Crop Development</td>
+                <td>121</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>be144</td>
+                <td>Kabita</td>
+                <td>Pudasini</td>
+                <td>Asst. Agriculture</td>
+                <td>Crop and Padding</td>
+                <td>121</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>be145</td>
+                <td>Basanta</td>
+                <td>Panta</td>
+                <td>Clerk</td>
+                <td>Water and Air Protection</td>
+                <td>121</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function toggleData() {
+            var table = document.getElementById("employeeTable");
+            var button = document.getElementById("toggleButton");
+
+            // Toggle visibility of employee data
+            if (table.style.display === "none") {
+                table.style.display = "table";
+                button.innerText = "Close Employee Data";
+            } else {
+                table.style.display = "none";
+                button.innerText = "Get Employee Data";
+            }
+        }
+    </script>
+
+</body>
+</html>
