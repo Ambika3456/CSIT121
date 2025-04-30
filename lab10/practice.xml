@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nelInfo>
+    <section>
+        <title>What is Network Error Logging?</title>
+        <description>Network Error Logging (NEL) is a tool built into browsers that helps detect and report network errors.</description>
+        <details>NEL is used to automatically report failures to a server. It can track issues like DNS errors, failed connections, slow responses, or server overloads.</details>
+    </section>
+    <section>
+        <title>Why is it important?</title>
+        <description>NEL helps site owners identify network problems experienced by users.</description>
+        <details>By collecting reports from client-side errors, developers can improve performance and reliability. NEL helps proactively detect recurring issues.</details>
+    </section>
+    <section>
+        <title>How is it used?</title>
+        <description>NEL is implemented using HTTP response headers and reporting APIs.</description>
+        <details>To enable NEL, developers use headers like `Report-To` and `NEL`, which configure the browser to send error logs to a specified endpoint.</details>
+    </section>
+</nelInfo>

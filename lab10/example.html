@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>How is Network Error Logging used?</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">What is Network Error Logging(NEL)?</a>
+        <a href="important.html">Why is it important?</a>
+        <a href="example.html">How is it used? (with examples)</a>
+        <a href="source.html">Sources</a>
+
+        </div>
+
+    <header>
+        <h1>Used of Network Error Logging(NEL)</h1>
+    </header>
+    <main>
+        <h2>How is Network Error Logging Used?</h2>
+        <p>In simple terms, Network Error Logging (NEL) helps websites to detect network errors and send detailed reports back to the server, so issues can be identified and fixed easily.It is useful to find problems like DNS failures, timeout, failed connections, and security errors, which typically occur on user’s side.
+             <p>One common problem that NEL helps identify is connection failure, where a website can’t be reached because the server is not responding or the connection timeout. This usually happens when there is slow network, too many users are accessing the site at once, or there is an issue with the user’s internet connection. For example, “The Visa Bulletin” website often has network issues when a larger number of students or immigrants access it at the same time, especially when the interview dates are update or the immigration schedule status changed. This usually causes slow loading, connection errors, or timeouts, which makes user hard to get the information in time. With the support of NEL, the website can record these issues and send reports to the server. Then, the website’s administrators can be alerted to the slow connection, or they can use alternative ways to improve these problems.</p>
+            <p>Next example, when we publish a website on GitHub Pages, users may sometimes see an error like “Page not found”, or "Your connection is not private."  This is considered a Network error.<br>
+               To fix such errors, developers implement Network Error Logging (NEL), which allows the browser to report failure back to the server, helping detect and troubleshoot network problems. </p>
+            <div class="conclusion">
+               <p>In conclusion, NEL is a weapon tool for developers to fix the network issues effectively.DNS failure, timeout, failed connection are the examples of network erros which can be fixed by NEL easily. </p>
+               </div>
+            <img src="screenshot.jpeg" alt="screenshot">
+        
+    </main>
+               <footer>
+                Network Error Logging
+            </footer>
+            <script>
+                function toggleMenu() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+        
+        </body>
+        </html>
